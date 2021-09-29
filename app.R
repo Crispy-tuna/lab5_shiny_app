@@ -18,7 +18,7 @@ ui <- fluidPage(
         headerPanel("Input data"),
         sidebarPanel(
           textInput("name",label="Name"),
-          textInput("zoom_level", label="Zoom level"),
+          numericInput("zoom_level", label="Zoom level",value=0),
           selectInput("select", label="Choose a type of map", 
                                   choices =c("toner" , "terrain",
                                                  "watercolor"),
@@ -26,7 +26,7 @@ ui <- fluidPage(
         ),
 
         mainPanel(
-          imageOutput("map")
+          plotOutput("map")
         )
     )
 )
