@@ -9,7 +9,7 @@
 
 library(shiny)
 library(devtools)
-devtools::install_github("Crispy-tuna/lab5group5")
+devtools::install_github("rui0027/lab5group5")
 library(lab5group5)
 
 ui <- fluidPage(
@@ -34,7 +34,7 @@ ui <- fluidPage(
 server <- function(input, output) {
 
     output$map <- renderPlot({
-      lab5group5::openmap_by_name(input$name,input$zoom_level,input$select)})
+      lab5group5::findmap(input$name,input$zoom_level,input$select)})
 }
 
 # Run the application 
