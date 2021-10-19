@@ -34,7 +34,7 @@ ui <- fluidPage(
 server <- function(input, output) {
 
     output$map <- renderPlot({
-      lab05group5::findmap(input$name,input$zoom_level,input$select)})
+      lab05group5::openmap_by_name(input$name,input$zoom_level,input$select)})
 }
 
 # Run the application 
