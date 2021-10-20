@@ -15,7 +15,7 @@ library(lab05group5)
 ui <- fluidPage(
     # Tittle and widgets
     pageWithSidebar(
-        headerPanel("Input data"),
+        headerPanel("Stamen map"),
         sidebarPanel(
           textInput("name",label="City name",value = "Linkoping"),
           numericInput("zoom_level", label="Zoom level(9 to 12)",value=10),
