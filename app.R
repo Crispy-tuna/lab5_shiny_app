@@ -22,7 +22,7 @@ ui <- fluidPage(
                                   choices =c("toner" , "terrain",
                                                  "watercolor"),
                                   selected = "toner"),         
-          sliderInput("zoom_level",label="zoom_level",min=9,max=12,value=10),
+          sliderInput("zoom_level",label="Zoom level",min=9,max=12,value=10),
 
         ),
 
