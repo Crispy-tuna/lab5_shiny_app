@@ -21,9 +21,10 @@ ui <- fluidPage(
           selectInput("select", label="Choose a type of map", 
                                   choices =c("toner" , "terrain",
                                                  "watercolor"),
-                                  selected = "toner")
-        ),
+                                  selected = "toner"),         
           sliderInput("zoom_level",label="zoom_level",min=9,max=12,value=10),
+
+        ),
 
 
         mainPanel(
