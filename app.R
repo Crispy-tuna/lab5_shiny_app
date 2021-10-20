@@ -18,7 +18,7 @@ ui <- fluidPage(
         headerPanel("Stamen map"),
         sidebarPanel(
           textInput("name",label="City name",value = "Linkoping"),
-          numericInput("zoom_level", label="Zoom level(9 to 12)",value=10),
+          numericInput("zoom_level", label="Zoom level (9 to 12)",value=10),
           selectInput("select", label="Choose a type of map", 
                                   choices =c("toner" , "terrain",
                                                  "watercolor"),
